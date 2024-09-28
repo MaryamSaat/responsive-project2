@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* @media only screen and (min-width: 1200px) { *//*مهم :با دید بک اند حالا که برای هر کدام از مدل صفحه ها یک سی اس اس جدا تعریف کردیم بهتر است این خط را حذف کنیم و در فایل سی اس اس اصلی جلوی هر ایمپورت صفحه این جمله را اضافه کنیم اینطوری موقع دنلود صفحات فقط سی اس اس مربوط به اون صفحه را دنلود میکند*/
+  .menu {
+    width: 100%;
+    height: 40px;
+    background-color: #2b2b2b;
+    position: unset;
+    transition: unset;
+    z-index: unset;
+    nav {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      column-gap: 10px;
+      div {
+        width: fit-content;
+        height: inherit;
+        box-shadow: unset;
+        a {
+          display: block;
+          width: fit-content;
+          padding: 0 10px;
+          text-decoration: none;
+          text-transform: capitalize;
+          color: white;
+          text-align: center;
+          font-size: 13px;
+          line-height: 40px;
+          font-family: "Poppins";
+          transition: 300ms;
+          &:hover {
+            background-color: darkolivegreen;
+          }
+        }
+      }
+    }
+  }
+  .bars {
+    display: none; /*خیلی مهم برای اینکه فقط در موبایل اسکرین بارز را لازم داریم باید تبلت و desktop , display = none شود*/
+  }
+/* } */
